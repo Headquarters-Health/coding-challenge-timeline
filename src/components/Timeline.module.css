@@ -1,0 +1,50 @@
+.timelineSection {
+    width: 100%;
+    min-height: 100vh;
+    background: #f9fafb;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timelineContainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sectionTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+    text-align: center;
+    margin: 0;
+}
+
+.timelineContent {
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    padding: 2rem;
+    min-height: 400px;
+}
+
+@media (max-width: 1024px) {
+    .timelineSection {
+        padding: 1.5rem 0;
+    }
+
+    .timelineContainer {
+        padding: 0 1rem;
+    }
+
+    .timelineContent {
+        padding: 1rem;
+    }
+}

@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+demo_org.sql
+insert_rehab.sql
+insert_rehab_bank.sql
+org_data.sql
+patients.csv
+team_members_one.csv
+team_members_two.numbers
