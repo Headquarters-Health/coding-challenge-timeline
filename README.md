@@ -18,14 +18,13 @@ A comprehensive timeline management system built with Next.js and PostgreSQL, de
 ## 🚀 Features
 
 - **Interactive Timeline Display**: Visual representation of timeline items with different categories
-- **Multiple Item Types**: Support for different types of timeline items:
+- **4 Item Types**: Support for different types of timeline items:
   - Rehabilitation activities
   - Evaluations
   - Return to Play items
   - Return to Learn items
 - **Database Integration**: PostgreSQL database for persistent data storage
 - **Real-time Updates**: Add, update, and manage timeline items in real-time
-- **Category Management**: Color-coded categories for better organization
 - **Settings Panel**: Comprehensive control panel for timeline management
 
 ## 🛠 Tech Stack
@@ -152,13 +151,6 @@ The application can be deployed on Vercel or any platform that supports Next.js:
    - `DATABASE_URL`
    - `SELECTED_PATIENT_ID`
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## 📝 License
 
