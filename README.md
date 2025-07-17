@@ -18,11 +18,10 @@ A comprehensive timeline management system built with Next.js and PostgreSQL, de
 ## 🚀 Features
 
 - **Interactive Timeline Display**: Visual representation of timeline items with different categories
-- **4 Item Types**: Support for different types of timeline items:
+- **3 Item Types**: Support for different types of timeline items:
   - Rehabilitation activities
   - Evaluations
   - Return to Play items
-  - Return to Learn items
 - **Database Integration**: PostgreSQL database for persistent data storage
 - **Real-time Updates**: Add, update, and manage timeline items in real-time
 - **Settings Panel**: Comprehensive control panel for timeline management
@@ -45,7 +44,7 @@ src/
 │   │   ├── add-rehab-item/     # Add rehabilitation items
 │   │   ├── add-evaluation-item/# Add evaluation items
 │   │   ├── add-return-to-play-item/
-│   │   ├── add-return-to-learn-item/
+
 │   │   ├── update-timeline-item/
 │   │   └── clear-timeline/     # Clear all timeline items
 │   ├── layout.tsx              # App layout
@@ -102,7 +101,7 @@ The application uses a PostgreSQL database with the main table `added_rehab` con
 - `description` - Item description
 - `category_main` - Main category
 - `category_color` - Category color code
-- `type` - Item type (rehab, evaluation, Play, Learn)
+- `type` - Item type (rehab, evaluation, Play)
 - `start_datetime_without_timezone` - Start date/time
 - `end_datetime_without_timezone` - End date/time
 - `patient_id_foreign` - Associated patient ID
@@ -120,7 +119,7 @@ The application uses a PostgreSQL database with the main table `added_rehab` con
 - `POST /api/add-rehab-item` - Add a new rehabilitation item
 - `POST /api/add-evaluation-item` - Add a new evaluation item
 - `POST /api/add-return-to-play-item` - Add a return to play item
-- `POST /api/add-return-to-learn-item` - Add a return to learn item
+
 - `PUT /api/update-timeline-item` - Update an existing timeline item - TODO: To be completed by the candidate.
 - `DELETE /api/clear-timeline` - Clear all timeline items
 

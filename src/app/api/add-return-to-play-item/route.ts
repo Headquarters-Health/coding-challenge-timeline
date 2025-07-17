@@ -38,7 +38,7 @@ export async function POST(request: Request) {
                 true, // active
                 'Step 1', // category_main
                 'FF8080', // category_color
-                'Rehab', // type
+                'Play', // type
                 'Starting with light activities that don\'t worsen your symptoms helps your brain gradually adjust to increased activity levels. This gentle approach helps prevent setbacks while building your tolerance for more demanding activities.', // why_simple
                 null, // next_step_rehab_bank_id
                 14, // created_by_team_member_id_foreign

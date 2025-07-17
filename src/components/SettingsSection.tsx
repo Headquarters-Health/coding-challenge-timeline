@@ -157,34 +157,7 @@ const SettingsSection: React.FC = () => {
         }
     };
 
-    const handleAddReturnToLearnItem = async () => {
-        try {
-            console.log('Adding return to learn item...');
-            const response = await fetch('/api/add-return-to-learn-item', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            });
 
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-
-            const result = await response.json();
-            console.log('Return to Learn item added successfully:', result);
-
-            // Optionally refresh the timeline data after adding
-            handleFetchTimeline();
-        } catch (error) {
-            console.error('Error adding return to learn item:', error);
-            setLastFetchResult({
-                error: true,
-                message: 'Failed to add return to learn item',
-                details: error instanceof Error ? error.message : 'Unknown error'
-            });
-        }
-    };
 
     return (
         <section className={styles.settingsSection}>
@@ -231,13 +204,7 @@ const SettingsSection: React.FC = () => {
                             <span className={styles.buttonIcon}>⚽</span>
                             Add Return to Play Item
                         </button>
-                        <button
-                            className={styles.actionButton}
-                            onClick={handleAddReturnToLearnItem}
-                        >
-                            <span className={styles.buttonIcon}>📚</span>
-                            Add Return to Learn Item
-                        </button>
+
                     </div>
                 </div>
                 {lastFetchResult && (
